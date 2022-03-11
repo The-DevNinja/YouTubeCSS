@@ -3,9 +3,12 @@
 /*  */
 
 * {
+    /* color */
     --lateral-nav-color: #212121;
     --main-bg-color: #181818;
     --glass-bg-color: rgba(255, 255, 255, 0.1);
+    /* calc */
+    --nav-width: 4rem;
 }
 
 body {
@@ -17,7 +20,7 @@ nav {
 }
 
 #nav-lateral {
-    width: 4rem;
+    width: var(--nav-width);
     height: 100vh;
     background-color: var(--lateral-nav-color);
     position: fixed;
@@ -27,7 +30,7 @@ nav {
 
 #nav-lateral>div {
     /* outline: 1px solid red; */
-    height: 4rem;
+    height: var(--nav-width);
     display: grid;
     place-content: center;
     justify-items: center;
@@ -42,6 +45,6 @@ nav {
 }
 
 #nav-lateral svg {
-    height: 1.5rem;
+    height: calc(var(--nav-width) / 2.5);
     fill: white;
 }
