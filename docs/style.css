@@ -1,47 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/*  */
+/* now we will not use only one CSS file for all */
 
-* {
-    --lateral-nav-color: #212121;
-    --grass-color: rgba(255, 255, 255, 0.1);
-    --nav-width: 4.5rem;
-}
+
+/* so we will organize in folders */
+
+
+/* and the style.css is the main file */
+
+@import url("./css/nav/nav_lateral.css");
+
+/*  */
 
 body {
     font-family: 'Poppins', sans-serif;
-}
-
-nav {
-    color: white;
-}
-
-#nav-lateral {
-    background-color: var(--lateral-nav-color);
-    height: 100vh;
-    width: 4.5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-#nav-lateral>div {
-    display: grid;
-    display: grid;
-    height: var(--nav-width);
-    place-content: center;
-    justify-items: center;
-}
-
-#nav-lateral>div:hover {
-    background-color: var(--grass-color);
-}
-
-#nav-lateral>div svg {
-    fill: white;
-    height: calc(var(--nav-width) / 2.5);
-}
-
-#nav-lateral>div span {
-    font-size: 0.6rem;
 }
