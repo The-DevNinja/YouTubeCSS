@@ -40,7 +40,7 @@
 
 #second-nav-container #search-form {
     max-width: 40rem;
-    width: 50vw;
+    width: 40vw;
     display: grid;
     grid-template-columns: 1fr 4rem;
 }
@@ -64,4 +64,28 @@
     background-color: var(--input-border-color);
     border: none;
     border-radius: 0 0.2rem 0.2rem 0;
+}
+
+#third-nav-container {
+    display: flex;
+    gap: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@media (max-width: 800px) {
+    #second-nav-container #search-form {
+        max-width: initial;
+        width: initial;
+        grid-template-columns: initial;
+    }
+    #search-form input[type="search"] {
+        display: none;
+    }
+    #search-form button {
+        background-color: initial;
+    }
+    #second-nav-container {
+        margin-left: auto;
+        padding-right: 1rem;
+    }
 }
