@@ -17,8 +17,23 @@
     justify-content: space-between;
 }
 
-.youtube-svg {
+#youtube-svg-container {
+    display: flex;
+}
+
+#youtube-svg-container svg {
     height: calc(var(--nav-width) / 3.5) !important;
+}
+
+#youtube-svg-container::after {
+    content: "it";
+    position: relative;
+    bottom: 0.3rem;
+    left: 0.3rem;
+    opacity: 0.5;
+    font-family: poppins;
+    font-size: 0.7rem;
+    text-transform: uppercase;
 }
 
 #nav-top svg {
