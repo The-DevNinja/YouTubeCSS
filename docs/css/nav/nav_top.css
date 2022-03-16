@@ -72,6 +72,12 @@
     padding-right: 1.5rem;
 }
 
+#third-nav-container img {
+    height: calc(var(--nav-width) / 2.5);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 @media (max-width: 800px) {
     #second-nav-container #search-form {
         max-width: initial;
