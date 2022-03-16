@@ -1,0 +1,39 @@
+* {
+    --lateral-nav-color: #212121;
+    --grass-color: rgba(255, 255, 255, 0.1);
+    --nav-width: 4.5rem;
+}
+
+nav {
+    color: white;
+}
+
+#nav-lateral {
+    background-color: var(--lateral-nav-color);
+    height: 100vh;
+    width: 4.5rem;
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+}
+
+#nav-lateral>div {
+    display: grid;
+    display: grid;
+    height: var(--nav-width);
+    place-content: center;
+    justify-items: center;
+}
+
+#nav-lateral>div:hover {
+    background-color: var(--grass-color);
+}
+
+#nav-lateral>div svg {
+    fill: white;
+    height: calc(var(--nav-width) / 2.5);
+}
+
+#nav-lateral>div span {
+    font-size: 0.6rem;
+}
