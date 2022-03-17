@@ -93,6 +93,25 @@
     object-fit: cover;
 }
 
+#third-nav-container>div {
+    display: flex;
+    position: relative;
+}
+
+#third-nav-container>div:not(:last-of-type):hover::after {
+    content: attr(title);
+    background-color: #606060;
+    padding: 0.5rem;
+    position: absolute;
+    top: var(--nav-height);
+    font-size: 0.7rem;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.2rem;
+    box-shadow: 0 0.1rem 0.2rem var(--input-border-color);
+}
+
 @media (max-width: 800px) {
     #second-nav-container #search-form {
         max-width: initial;
